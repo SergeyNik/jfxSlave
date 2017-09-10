@@ -1,0 +1,202 @@
+/*@import url('https://fonts.googleapis.com/css?family=Noto+Sans');*/
+
+/* TableView */
+.tree-table-view{
+    -fx-tree-table-color: rgba(118, 188, 245, 0.8);
+    -fx-tree-table-rippler-color : rgba(255, 0, 0, 0.9);
+}
+
+.tree-table-view:focused .tree-table-row-cell:selected {
+    -fx-background-color: -fx-tree-table-color  ;
+    -fx-table-cell-border-color: -fx-tree-table-color;
+}
+
+.tree-table-view:focused .tree-table-row-cell:selected .tree-table-cell{
+    -fx-text-fill: white;
+}
+
+.tree-table-view .jfx-rippler {
+    -fx-rippler-fill: -fx-tree-table-rippler-color;
+}
+
+.tree-table-view .column-header ,
+.tree-table-view .column-header-background,
+.tree-table-view .column-header-background .filler{
+    -fx-background-color:TRANSPARENT;
+}
+
+.tree-table-view .column-header{
+    -fx-border-width : 0 1 0 1;
+    -fx-border-color: #F3F3F3;
+}
+
+.tree-table-view .column-header .label {
+    -fx-text-fill : #949494;
+    -fx-padding : 16 0 16 0 ;
+}
+
+.tree-table-view .column-header .arrow, .tree-table-view .column-header .sort-order-dot{
+    -fx-background-color : #949494;
+}
+
+/*.tree-table-view .column-header:last-visible {*/
+/*-fx-border-width: 0 2 0 1;*/
+/*}*/
+
+.tree-table-view .column-header-background{
+    -fx-border-width : 0 0.0 1 0;
+    -fx-border-color:#F3F3F3;
+}
+
+.tree-table-view .tree-table-cell{
+    -fx-border-width:0 0 0 0;
+    -fx-padding : 16 0 16 0 ;
+}
+
+.tree-table-view .column-overlay{
+    -fx-background-color: -fx-tree-table-color;
+}
+
+.tree-table-view .column-resize-line, .tree-table-view .column-drag-header{
+    -fx-background-color: -fx-tree-table-rippler-color;
+}
+
+.tree-table-view:focused {
+    -fx-background-color: -fx-tree-table-color,-fx-box-border,-fx-control-inner-background;
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1.4, 0, 0;
+    /*....*/
+    -fx-padding: 1; /* 0.083333em; */
+}
+
+.tree-table-row-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-text-fill;
+    -fx-padding: 0.333333em 0.229em 0.333333em 0.229em; /* 4 */
+    -fx-shape: "M 0 -3.5 L 4 0 L 0 3.5 z";
+}
+.tree-table-row-cell .jfx-text-field{
+    -fx-focus-color: rgba(240, 40, 40, 1);
+}
+
+
+/* Tab Pane */
+.jfx-tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+.jfx-tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+    /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; !* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+}
+
+.jfx-tab-pane {
+    -fx-tab-min-width: 90px;
+}
+
+.tab {
+    -fx-background-insets: 0 1 0 1, 0, 0;
+}
+
+.jfx-tab-pane .tab {
+    -fx-background-color: #e6e6e6;
+}
+
+.jfx-tab-pane .tab:selected {
+    -fx-background-color: #117bf3;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+}
+
+
+
+
+/* Hamburger */
+.jfx-hamburger-icon {
+    -fx-spacing: 5;
+    -fx-cursor: hand;
+}
+.jfx-hamburger-icon StackPane{
+    -fx-pref-width: 40px;
+    -fx-pref-height: 7px;
+    -fx-background-color : #D63333;
+    -fx-background-radius : 5px;
+}
+
+
+
+
+/* Toolbar */
+.jfx-toolbar {
+    -fx-background-color: #117bf3;
+}
+
+.jfx-label {
+    -fx-background-color: #117bf3;
+}
+
+
+/*.option-list-view {*/
+    /*-fx-pref-width: 160.0px;*/
+    /*-fx-background-color: WHITE;*/
+/*}*/
+
+/*.option-jfx-list-view-icon {*/
+    /*-fx-fill: #5264AE;*/
+    /*-fx-padding: 0.0 10.0 0.0 5.0;*/
+    /*-fx-cursor: hand;*/
+/*}*/
+
+.jfx-hamburger-right {
+    -fx-padding: 22px;
+
+}
+
+.jfx-hamburger-right StackPane {
+    -fx-pref-width: 4px;
+}
+
+
+
+
+/* Main rippler handler */
+.icons-rippler {
+    -jfx-rippler-fill: white;
+    -jfx-mask-type: RECT;
+}
+
+.icons-rippler:hover {
+    -fx-cursor: hand;
+}
+
+
+
+
+/* Badge (with label) create new slave */
+.jfx-badge-slave {
+    /*-fx-background-color: #ff4081;*/
+    -fx-background-radius: 23;
+    -fx-pref-width: 23;
+    -fx-pref-height: 23;
+    -fx-alignment: center;
+    -fx-font-size: 2em;
+    -fx-font-family: "Noto Sans", "Noto Sans CJK JP", monospace;
+}
+
+/* icon (+) create new slave */
+.icon-slave {
+    /*-fx-fill: #FE774D;*/
+    -fx-padding: 10.0;
+    -fx-cursor: hand;
+}
+
+

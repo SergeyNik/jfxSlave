@@ -1,0 +1,6 @@
+# IntelliJ
+out/
+build/
+.gradle/
+.idea/
+src/test/
