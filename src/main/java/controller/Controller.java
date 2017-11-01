@@ -85,6 +85,7 @@ public class Controller {
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
     void initialize() {
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/MainPopup.fxml"));
         try {
             toolbarPopup = new JFXPopup(loader.load());
